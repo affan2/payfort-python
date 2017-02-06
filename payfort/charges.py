@@ -1,8 +1,8 @@
 import requests
 
-from payfort import api_base
+from . import api_base
 
-from payfort.payfort import PayFortObject
+from .payfort import PayFortObject
 
 __all__ = ("Charge",)
 
@@ -21,9 +21,9 @@ class Charge(PayFortObject):
     def create(self, data):
         """
         Create a new Charge
-        This is where the action happens – creating a Charge is how you charge
-        a credit / debit card with Start, and it’s really
-        easy as you’ll see in a bit.
+        This is where the action happens - creating a Charge is how you charge
+        a credit / debit card with Start, and it's really
+        easy as you'll see in a bit.
 
         HTTP Request
 
@@ -39,7 +39,7 @@ class Charge(PayFortObject):
         Retrieve an existing Charge
 
         Just pass the unique Charge ID that you got when creating the
-        Charge and we’ll send you back the latest details on the charge.
+        Charge and we'll send you back the latest details on the charge.
 
         HTTP Request
 
@@ -67,8 +67,8 @@ class Charge(PayFortObject):
         """
         List all Charges
 
-        This endpoint retrieves all the charges that you’ve got on your account.
-        That’s right .. all of it. The good, the bad and the ugly.
+        This endpoint retrieves all the charges that you've got on your account.
+        That's right .. all of it. The good, the bad and the ugly.
         (The failed and the successful charges).
 
         The charges are returned in sorted order,

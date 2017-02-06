@@ -1,7 +1,8 @@
 import requests
-from payfort.payfort import PayFortObject
 
-from payfort import api_base
+from . import api_base
+from .payfort import PayFortObject
+
 
 __all__ = ("Customer",)
 

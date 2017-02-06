@@ -11,10 +11,9 @@ api_key = None
 api_base = 'https://api.start.payfort.com'
 api_version = None
 
-from payfort.cards import *
-from payfort.charges import *
-from payfort.customer import *
-from payfort.refunds import *
-from payfort.tokens import *
-
+from .cards import *
+from .charges import *
+from .customer import *
+from .refunds import *
+from .tokens import *
 from .errors import *

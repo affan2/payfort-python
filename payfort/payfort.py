@@ -1,5 +1,5 @@
 import json
-from payfort.errors import ERROR_TYPES, PayFortError
+from .errors import ERROR_TYPES, PayFortError
 
 __all__ = ("PayFortObject",)
 

@@ -1,8 +1,8 @@
 import requests
 
-from payfort import api_base
+from . import api_base
 
-from payfort.payfort import PayFortObject
+from .payfort import PayFortObject
 
 __all__ = ("Card",)
 
@@ -34,7 +34,7 @@ class Card(PayFortObject):
         Retrieve a Card
 
         Just pass the unique card ID that you got when creating the Card
-        and we’ll send you back the latest details on the card.
+        and we'll send you back the latest details on the card.
 
         HTTP Request
 
